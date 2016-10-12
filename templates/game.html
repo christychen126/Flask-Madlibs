@@ -2,26 +2,66 @@
 <html>
 <head>
   <title>Game</title>
+  <link rel="stylesheet" href="/static/madlibs.css">
 </head>
-<body>
+<body style="background-color: black;">
 
-<h1 style=" font-family:sans-serif; color:red;">Welcome to our game!</h1>
+<h1 style=" font-family:sans-serif;">Welcome to our game!</h>
 
-<form action="/madlib">
-Enter your name:
-<input type="text" name="person"><br>
-Select color:<br>
-<select name="color">
+<form action="/madlib" class="form">
+
+  Enter your name:
+  <input type="text" name="person"><br>
+
+  Select color:<br>
+  <select name="color">
     <option value="red">Red</option>
     <option value="blue">Blue</option>
     <option value="black">Black</option>
-</select><br>
-Enter noun:
-<input type="text" name="noun"><br>
-Enter adjective:
-<input type="text" name="adjective"><br>
-<input type="submit">
+  </select><br>
+  
+  Enter noun:
+  <input type="text" name="noun"><br>
+  
+  Enter adjective:
+  <input type="text" name="adjective"><br>
+  
+  Select your city:<br>
+
+  <input type="radio" name="city" value="Chicago">Chicago<br>
+  <input type="radio" name="city" value="Honolulu">Honolulu<br>
+  <input type="radio" name="city" value="Orlando">Orlando<br>
+  <input type="radio" name="city" value="Austin">Austin<br>
+
+  Pick one restaurant:<br>
+
+  <input type="checkbox" name="restaurant" value="Bubba-Gump-Shrimp">Bubba Gump Shrimp<br>
+  <input type="checkbox" name="restaurant" value="Dunkin-Donuts">Dunkin Donuts<br>
+  <input type="checkbox" name="restaurant" value="Baja-Fresh">Baja Fresh
+  <br>
+  <input type="checkbox" name="restaurant" value="Ruths-Chris">Ruth's Chris<br>
+
+  What street are you on?<br>
+  <input type="text" name="streetname"><br>
+
+  What day is it:<br>
+  <select name="dayofweek">
+    <option value="Monday">Monday</option>
+    <option value="Tuesday">Tuesday</option>
+    <option value="Wednesday">Wednesday</option>
+    <option value="Thursday">Thursday</option>
+    <option value="Friday">Friday</option>
+    <option value="Saturday">Saturday</option>
+    <option value="Sunday">Sunday</option>
+  </select>
+
+  <br>
+
+  <input type="submit">
+
 </form>
+
+ 
 
 
 

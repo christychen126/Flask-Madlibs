@@ -63,6 +63,12 @@ def show_madlib():
     noun = request.args.get("noun")
     color = request.args.get("color")
     adjective = request.args.get("adjective")
+    city=request.args.get("city")
+    restaurant=request.args.getlist("restaurant")
+    streetname=request.args.get("streetname")
+    dayofweek=request.args.get("dayofweek")
+
+    print  dir(request.args)
 
     return render_template(
         "madlib.html", 
@@ -70,6 +76,12 @@ def show_madlib():
         noun=noun, 
         adjective=adjective, 
         color=color,
+        city=city,
+        restaurant=restaurant,
+        streetname=streetname,
+        dayofweek=dayofweek,
+
+
         )
 
 
